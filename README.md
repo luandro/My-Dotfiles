@@ -3,7 +3,7 @@
 ##Apps
 ####[Sublime Text 3](http://google.com)
 - [Emmet](http://google.com) with [JSX](http://google.com) support
-####[iTerm]()
+####[iTerm2]()
 - [Dark Solarized](http://google.com) color scheme
 - [Meslo Powerline icon](http://google.com) for non ASCII characters
 ##CLI
@@ -18,3 +18,6 @@
 - [gulp](http://google.com)
 - [pm2](http://google.com)
 - [babel](http://google.com)
+- [webpack]()
+
+####Vagrant
