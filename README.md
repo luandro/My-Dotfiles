@@ -1,12 +1,52 @@
 #My personal initial config
+
 ##OSx options
+
 ##Apps
+- [Brew](http://brew.sh/) ```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
+
+- [Brew cask](http://caskroom.io/) ```brew install cask```
+
+- [WGET](http://www.gnu.org/software/wget/) ``` brew install wget```
+
+- [youtube-dl](https://rg3.github.io/youtube-dl/) ```brew install youtube-dl```
+
+- [Spotify](https://www.spotify.com/br/) ```brew cask install spotify```
+
+- [VLC](http://www.videolan.org/vlc/) ```brew cask install vlc```
+
+- [uTorrent]() ```brew cask install utorrent```
+
+- [Google Chrome](https://www.google.com.br/chrome/browser/desktop/) ```brew cask install google-chrome```
+
+####Fonts
+```
+brew tap caskroom/fonts
+brew cask install font-lato
+font-ubuntu
+font-roboto
+font-raleway font-raleway-dots
+font-bebas-neue
+```
+
+
 ####[Sublime Text 3](http://google.com)
+```
+brew tap caskroom/versions
+
+brew cask install sublime-text3
+```
+
 - [Emmet](http://google.com) with [JSX](http://google.com) support
-####[iTerm2]()
+
+####[iTerm2](http://webpack.github.io/)
+```brew cask install iterm2```
+
 - [Dark Solarized](http://google.com) color scheme
 - [Meslo Powerline icon](http://google.com) for non ASCII characters
+
 ##CLI
+
 ####[Zsh](http://google.com)
 - [Oh-my-Zsh](http://google.com) with _agnoster_ theme and plugins=(sublime git autojump brew node npm sudo tmux tmuxinator vagrant web-search)
 - [Z](http://google.com) to jump around
@@ -21,3 +61,5 @@
 - [webpack]()
 
 ####Vagrant
+- [VVV](https://github.com/varying-vagrant-vagrants/vvv)
+- [VV - Site Wizard](https://github.com/bradp/vv)
