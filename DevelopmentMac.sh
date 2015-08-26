@@ -1,10 +1,7 @@
 #!/bin/sh
 
-<<<<<<< HEAD
-#TODO: three finger drag
+#TODO:
 
-=======
->>>>>>> f6646a3fe8a90ed1e562297a211035fc35c1a937
 # Set the colours you can use
 black='\033[0;30m'
 white='\033[0;37m'
@@ -153,9 +150,13 @@ echo "Setting a blazingly fast keyboard repeat rate"
 defaults write NSGlobalDomain KeyRepeat -int 0
 
 echo ""
-echo "Enabling Universal Tap-Clicking "
+echo "Enabling Universal Tap-Clicking"
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+echo ""
+echo "Enabling three finger drag"
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
 
 echo ""
 echo "Setting trackpad & mouse speed to a reasonable number"
@@ -445,8 +446,6 @@ defaults write com.apple.Terminal "Default Window Settings" -string "Pro"
 defaults write com.apple.Terminal "Startup Window Settings" -string "Pro"
 
 ###############################################################################
-<<<<<<< HEAD
-=======
 # Sublime Text
 ###############################################################################
 echo ""
@@ -465,7 +464,6 @@ fi
 
 
 ###############################################################################
->>>>>>> f6646a3fe8a90ed1e562297a211035fc35c1a937
 # Kill affected applications
 ###############################################################################
 
@@ -485,166 +483,4 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
   "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
   "Terminal" "Transmission"; do
   killall "${app}" > /dev/null 2>&1
-<<<<<<< HEAD
 done
-=======
-done
-
-####################### INSTALL BASIC STUFF ################
-
-#Install Brew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-#Update
-brew update
-
-# homebrew taps
-brew tap caskroom/cask
-brew tap caskroom/versions
-brew tap homebrew/dupes
-brew tap caskroom/versions
-brew tap homebrew/boneyard
-brew tap caskroom/fonts
-
-# Updated grep
-brew install grep
-
-# Updated curl
-brew install curl
-brew link curl --force
-
-# Updated bash
-brew install bash
-
-# Updated python/pip
-brew install python
-pip install --upgrade setuptools
-pip install --upgrade pip
-
-# homebrew binaries
-binaries=(
-	brew-cask
-	graphicsmagick
-	mackup
-	wget
-	youtube-dl
-	webkit2png
-	rename
-	zopfli
-	ffmpeg
-	python
-	sshfs
-	trash
-	node
-	tree
-	ack
-	hub
-	git
-	git-extras
-)
-
-echo "installing binaries..."
-brew install ${binaries[@]}
-
-# cask apps
-apps=(
-	spotify
-	utorrent
-	screenflick
-	hazel 
-	sublime-text3
-	vlc
-	vagrant
-	virtualbox
-	android-file-transfer
-	slack
-	appcleaner
-	firefox
-	sketch
-	skype
-	iterm2
-	sourcetree
-	alfred
-	google-chrome
-	cyberduck
-	google-hangouts
-	dash
-	xquartz
-	the-unarchiver
-	lastpass-universal
-	paparazzi
-	bartender
-	caffeine
-	sketch-toolbox
-	cleanmymac
-	imageoptim
-	macdown
-	qlcolorcode 
-	qlstephen 
-	qlmarkdown 
-	quicklook-json 
-	qlprettypatch
-	quicklook-csv
-	betterzipql
-	qlimagesize
-	webpquicklook
-	suspicious-package
-)
-# Install apps to /Applications
-# Default is: /Users/$user/Applications
-echo "installing apps..."
-brew cask install --appdir="/Applications" ${apps[@]}
-
-# Link alfred
-brew cask alfred link
-
-# Install fonts
-fonts=(
-  	font-m-plus
-  	font-clear-sans
-  	font-inconsolata
-	font-source-code-pro
-	font-lato
-	font-ubuntu
-	font-roboto
-	font-raleway font-raleway-dots
-	font-bebas-neue
-)
-
-echo "installing fonts..."
-brew cask install ${fonts[@]}
-
-# Install GNU core utilities (those that come with OS X are outdated)
-brew install coreutils
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew install findutils
-
-# NPM
-node_packages=(
-  	yo
-  	gulp
-  	json-server
-  	nodemon
-  	pm2
-  	babel
-  	webpack
-  	grunt
-  	bower
-)
-echo "installing fonts..."
-npm install -g  ${node_packages[@]}
-
-# Oh My Zsh
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-zsh --version
-chsh -s /bin/zsh
-
-# The Ultimate Vim Distribution
-curl http://j.mp/spf13-vim3 -L -o - | sh
-
-# verify
-brew doctor
-
-# Cleanup
-brew cleanup
->>>>>>> f6646a3fe8a90ed1e562297a211035fc35c1a937
