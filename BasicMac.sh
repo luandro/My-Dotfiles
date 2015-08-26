@@ -50,6 +50,7 @@ binaries=(
 	hub
 	git
 	git-extras
+	bradp/vv/vv
 )
 
 echo "installing binaries..."
