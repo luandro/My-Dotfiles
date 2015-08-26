@@ -618,9 +618,18 @@ node_packages=(
   	babel
   	webpack
   	grunt
+  	bower
 )
 echo "installing fonts..."
 npm install -g  ${node_packages[@]}
+
+# Oh My Zsh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+zsh --version
+chsh -s /bin/zsh
+
+# The Ultimate Vim Distribution
+curl http://j.mp/spf13-vim3 -L -o - | sh
 
 # verify
 brew doctor
