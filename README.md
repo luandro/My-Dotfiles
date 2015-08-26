@@ -50,8 +50,10 @@ brew cask install sublime-text3
 ####[Zsh](http://google.com)
 - [Oh-my-Zsh](http://google.com) with _agnoster_ theme and plugins=(sublime git autojump brew node npm sudo tmux tmuxinator vagrant web-search)
 - [Z](http://google.com) to jump around
+
 ####[Vim](http://google.com)
 - [spf13-vim](http://vim.spf13.com/)
+
 ##NodeJs
 - [json-server](https://github.com/typicode/json-server)
 - [nodemon](http://google.com)
@@ -59,7 +61,9 @@ brew cask install sublime-text3
 - [pm2](http://google.com)
 - [babel](http://google.com)
 - [webpack]()
+- [grunt]()
+- [yo]()
 
 ####Vagrant
-- [VVV](https://github.com/varying-vagrant-vagrants/vvv)
+- [VVV](https://github.com/varying-vagrant-vagrants/vvv) - Varying Vagrant Vagrants
 - [VV - Site Wizard](https://github.com/bradp/vv)
