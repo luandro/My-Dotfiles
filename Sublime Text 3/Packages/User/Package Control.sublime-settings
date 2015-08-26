@@ -1,0 +1,43 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Ansible",
+		"AutoFileName",
+		"Babel",
+		"BrowserBookmarks",
+		"Chain of Command",
+		"Color Highlighter",
+		"EditorConfig",
+		"Emmet",
+		"Emmet Css Snippets",
+		"Fountain",
+		"Handlebars",
+		"Jade",
+		"JavaScriptNext - ES6 Syntax",
+		"JSONLint",
+		"JSX",
+		"LESS",
+		"LoremGibson",
+		"Markdown HTML Preview",
+		"Markmon real-time markdown preview",
+		"Nettuts+ Fetch",
+		"Package Control",
+		"Pretty JSON",
+		"ReactJS",
+		"ReactJS Snippets",
+		"RegReplace",
+		"Sass",
+		"Seti_UI",
+		"SideBarEnhancements",
+		"Stylus",
+		"SublimeLinter",
+		"SublimeLinter-jscs",
+		"SublimeLinter-jsxhint",
+		"TernJS",
+		"Vagrant",
+		"View In Browser"
+	]
+}
