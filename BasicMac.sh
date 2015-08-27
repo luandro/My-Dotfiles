@@ -31,6 +31,11 @@ brew install python
 pip install --upgrade setuptools
 pip install --upgrade pip
 
+# Update Vim
+brew install mercurial
+brew install vim
+export PATH=/usr/local/bin:$PATH
+
 # homebrew binaries
 binaries=(
 	caskroom/cask/brew-cask
