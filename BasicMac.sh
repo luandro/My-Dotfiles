@@ -15,6 +15,7 @@ brew tap homebrew/dupes
 brew tap caskroom/versions
 brew tap homebrew/boneyard
 brew tap caskroom/fonts
+brew tap theory/sqitch
 
 # Updated grep
 brew install grep
@@ -39,6 +40,14 @@ export PATH=/usr/local/bin:$PATH
 # homebrew binaries
 binaries=(
 	caskroom/cask/brew-cask
+	ssh-copy-id
+    git-annex
+    heroku-toolbelt
+    postgresql
+    mongodb
+    ghc 
+    cabal-install
+    sqitch_pg
 	graphicsmagick
 	mackup
 	wget
@@ -90,6 +99,7 @@ apps=(
 	paparazzi
 	bartender
 	caffeine
+	nosleep
 	sketch-toolbox
 	cleanmymac
 	imageoptim
@@ -141,6 +151,7 @@ node_packages=(
   	pm2
   	babel
   	webpack
+  	xo
   	grunt
   	bower
 )

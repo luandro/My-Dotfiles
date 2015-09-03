@@ -48,11 +48,9 @@ brew cask install sublime-text3
 ##CLI
 
 ####[Zsh](http://google.com)
-- [Oh-my-Zsh](http://ohmyz.sh/) with _agnoster_ theme and plugins=(sublime git autojump brew node npm sudo tmux tmuxinator vagrant web-search) 
+- [Oh-my-Zsh](http://ohmyz.sh/)
 - ZSH_THEME="agnoster"
 - plugins=(sublime git autojump brew node npm sudo tmux tmuxinator vagrant web-search)
-
-
 - [Z](https://github.com/rupa/z) to jump around
 
 ####[Vim](http://google.com)

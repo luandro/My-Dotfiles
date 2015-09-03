@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # http://plusbryan.com/my-first-5-minutes-on-a-server-or-essential-security-for-linux-servers
+# https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04
 
 #TODO:
 
@@ -35,6 +36,15 @@ cecho "#                                             #" $green
 cecho "#                   por Luandro               #" $red
 cecho "###############################################" $green
 echo ""
+
+###############################################################################
+# SSH
+###############################################################################
+echo ""
+echo "Let's start by creating your ssh key"
+ssh-keygen -t rsa
+eval `ssh-agent -s`
+ssh-add ~/.ssh/id_rsa
 
 ###############################################################################
 # General UI/UX
