@@ -41,7 +41,6 @@ export PATH=/usr/local/bin:$PATH
 binaries=(
 	caskroom/cask/brew-cask
 	ssh-copy-id
-    git-annex
     heroku-toolbelt
     postgresql
     mongodb
@@ -65,6 +64,8 @@ binaries=(
 	git
 	git-extras
 	bradp/vv/vv
+	ntfs-3g
+	nmap
 )
 
 echo "installing binaries..."
@@ -73,9 +74,9 @@ brew install ${binaries[@]}
 # cask apps
 apps=(
 	spotify
+	spotifree
 	utorrent
 	screenflick
-	hazel 
 	sublime-text3
 	vlc
 	vagrant
