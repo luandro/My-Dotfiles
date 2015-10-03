@@ -143,6 +143,9 @@ brew install coreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
 
+#Sass
+sudo gem install sass
+
 # NPM
 node_packages=(
   	yo
