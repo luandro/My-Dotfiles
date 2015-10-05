@@ -81,6 +81,8 @@ apps=(
 	vlc
 	vagrant
 	virtualbox
+	boot2docker
+	elm-platform
 	android-file-transfer
 	slack
 	appcleaner
