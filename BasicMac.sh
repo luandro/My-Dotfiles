@@ -57,16 +57,20 @@ binaries=(
 	ffmpeg
 	python
 	trash
-	node
 	tree
 	ack
 	hub
 	git
 	git-extras
-	bradp/vv/vv
 	ntfs-3g
 	nmap
 )
+
+echo "Installing node..."
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+nvm install node
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 echo "installing binaries..."
 brew install ${binaries[@]}
@@ -77,33 +81,23 @@ apps=(
 	spotifree
 	utorrent
 	screenflick
-	sublime-text3
+	visual-studio-code
 	vlc
-	vagrant
-	virtualbox
-	boot2docker
-	elm-platform
 	android-file-transfer
 	slack
 	appcleaner
 	firefox
 	sketch
-	skype
 	iterm2
 	sourcetree
 	alfred
 	google-chrome
 	cyberduck
-	google-hangouts
 	dash
+	franz
 	xquartz
 	the-unarchiver
-	lastpass
-	paparazzi
-	bartender
 	caffeine
-	nosleep
-	sketch-toolbox
 	cleanmymac
 	imageoptim
 	macdown
@@ -122,10 +116,6 @@ apps=(
 # Default is: /Users/$user/Applications
 echo "installing apps..."
 brew cask install --appdir="/Applications" ${apps[@]}
-
-# Vagrant plugins
-vagrant plugin install vagrant-hostsupdater
-vagrant plugin install vagrant-triggers
 
 # Install fonts
 fonts=(
@@ -150,16 +140,17 @@ sudo gem install sass
 
 # NPM
 node_packages=(
+	yarn
   	yo
-  	gulp
-  	json-server
+	fixpack
+	standard
+	gh-pages-deploy
+  	webpack
   	nodemon
   	pm2
-  	babel
-  	webpack
-  	xo
-  	grunt
-  	bower
+	np
+	create-react-app
+	live-server
 )
 echo "installing node packages..."
 npm install -g  ${node_packages[@]}
@@ -167,8 +158,8 @@ npm install -g  ${node_packages[@]}
 ###############################################################################
 # Sublime Text
 ############################################################################### 
-echo "Setting Git to use Sublime Text as default editor"
-git config --global core.editor "subl -n -w"
+echo "Setting Git to use Visual Code Studio as default editor"
+git config --global core.editor "code -w"
 
 # Oh My Zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
