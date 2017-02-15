@@ -1,5 +1,8 @@
 #My personal initial config
 
+## Usage
+`bash <(curl -s https://raw.githubusercontent.com/luandro/My-Dotfiles/master/BasicMac.sh)`
+
 ##OSx options
 
 ##Apps
