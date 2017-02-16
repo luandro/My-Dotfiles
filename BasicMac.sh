@@ -37,6 +37,12 @@ brew install mercurial
 brew install vim
 export PATH=/usr/local/bin:$PATH
 
+echo "Installing node..."
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+nvm install node
+
 # homebrew binaries
 binaries=(
 	caskroom/cask/brew-cask
@@ -65,12 +71,6 @@ binaries=(
 	ntfs-3g
 	nmap
 )
-
-echo "Installing node..."
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
-nvm install node
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 echo "installing binaries..."
 brew install ${binaries[@]}
@@ -151,6 +151,8 @@ node_packages=(
 	np
 	create-react-app
 	live-server
+	truffle
+	ethereumjs-testrpc
 )
 echo "installing node packages..."
 npm install -g  ${node_packages[@]}
